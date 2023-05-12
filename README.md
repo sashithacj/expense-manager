@@ -78,4 +78,4 @@ npm start
 
 - [React Native](https://reactnative.dev/)
 - [NodeJS](https://nodejs.org/)
-- [PouchDB](https://pouchdb.com//)
+- [PouchDB](https://pouchdb.com/)
