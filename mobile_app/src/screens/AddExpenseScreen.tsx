@@ -1,12 +1,13 @@
-import React, { useState } from 'react';
-import { View, Text, TextInput, Button, StyleSheet, TouchableOpacity, SafeAreaView, useColorScheme, StatusBar, ScrollView } from 'react-native';
+import React, { useState, useEffect } from 'react';
+import { View, Text, TextInput, Button, StyleSheet, TouchableOpacity, SafeAreaView, useColorScheme, StatusBar, ScrollView, Alert } from 'react-native';
 import { Header } from '@rneui/themed';
 import LinearGradient from 'react-native-linear-gradient';
-import { useDispatch } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import { Expense } from '../store/types';
 import { ADD_EXPENSE } from '../store/actions/expenseActions';
 import DateTimePickerModal from 'react-native-modal-datetime-picker';
 import { Picker } from '@react-native-picker/picker';
+
 
 const expenseTypes = ['Personal', 'Education', 'Transport', 'Food', 'Entertainment'];
 
@@ -35,6 +36,22 @@ const AddExpenseScreen: React.FC = ({ navigation }) => {
     setDate(selectedDate.getTime());
     hideDatePicker();
   };
+
+  const maxExpense = 10000;
+  const expenses = useSelector((state) => state.expenses);
+
+  useEffect(() => {
+    const totalExpense = expenses.reduce((total, expense) => total + expense.amount, 0);
+    const isCloseToLimit = totalExpense >= 0.9 * maxExpense;
+
+    if (isCloseToLimit) {
+      Alert.alert(
+        'Warning',
+        `Your monthly expenses have reached the maximum expense limit.`,
+        [{ text: 'OK' }],
+      );
+    }
+  }, [expenses]);
 
   const addExpense = () => {
     const newExpense: Expense = {
@@ -77,7 +94,7 @@ const AddExpenseScreen: React.FC = ({ navigation }) => {
             />
           </View>
           <View style={styles.inputContainer}>
-            <Text style={styles.label}>Amount:</Text>
+            <Text style={styles.label}>Amount (Rs):</Text>
             <TextInput
               style={styles.input}
               placeholder="Enter amount"
