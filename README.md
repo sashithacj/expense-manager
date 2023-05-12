@@ -71,7 +71,7 @@ npm start
 5. Start the front-end app
 ```
 cd ../mobile_app
-npm start
+npm start 
 ```
 
 ## Acknowledgements
