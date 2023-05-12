@@ -8,13 +8,26 @@ This is a personal expense tracking mobile application built using React Native 
 - View/Filter Expenses
 - Set max monthly expense amount (I set default as Rs. 10,000)
 - Show an alert when the total monthly expense is close to the limit
-- Dashboard to view statistics
+
+## Things ongoing (Pending)
+
+- Connect APIs to mobile app using Axios
+- Create Dashboard in Node + Using Chart.js to show statistics of Expenses
+- Create an user login system
+- Themes (Light/Dark)
 
 ## Technologies Used
 
 - React Native with TypeScript
 - NodeJS with TypeScript
 - PouchDB (NoSQL Database)
+
+## Time Used (11 hours Approx.)
+
+- Tuesday 7pm to 10 pm
+- Wednesday 7pm to 10 pm
+- Thurday 7pm to 11 pm
+- Friday
 
 ## Screenshots
 
