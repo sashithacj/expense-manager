@@ -31,13 +31,13 @@ This is a personal expense tracking mobile application built using React Native 
 
 ## Screenshots
 
-![alt text](https://raw.githubusercontent.com/sashithacj/expense-manager/main/screenshots/Screenshot_1683870179.png)
-![alt text](https://raw.githubusercontent.com/sashithacj/expense-manager/main/screenshots/Screenshot_1683870194.png)
-![alt text](https://raw.githubusercontent.com/sashithacj/expense-manager/main/screenshots/Screenshot_1683870207.png)
-![alt text](https://raw.githubusercontent.com/sashithacj/expense-manager/main/screenshots/Screenshot_1683870219.png)
-![alt text](https://raw.githubusercontent.com/sashithacj/expense-manager/main/screenshots/Screenshot_1683870313.png)
-
-## Getting Started
+<div style="display: flex; flex-direction: row; justify-content: space-between;">
+  <img src="https://raw.githubusercontent.com/sashithacj/expense-manager/main/screenshots/Screenshot_1683870179.png" width="200" />
+  <img src="https://raw.githubusercontent.com/sashithacj/expense-manager/main/screenshots/Screenshot_1683870194.png" width="200" />
+  <img src="https://raw.githubusercontent.com/sashithacj/expense-manager/main/screenshots/Screenshot_1683870207.png" width="200" />
+  <img src="https://raw.githubusercontent.com/sashithacj/expense-manager/main/screenshots/Screenshot_1683870219.png" width="200" />
+  <img src="https://raw.githubusercontent.com/sashithacj/expense-manager/main/screenshots/Screenshot_1683870313.png" width="200" />
+</div>
 
 ### Prerequisites
 
