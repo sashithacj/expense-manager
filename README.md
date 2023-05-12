@@ -18,11 +18,11 @@ This is a personal expense tracking mobile application built using React Native 
 
 ## Screenshots
 
-1. Home Screen
-2. Add Expense Screen
-3. Expense List Screen
-4. Dashboard Screen
-5. Settings Screen
+![alt text](https://raw.githubusercontent.com/sashithacj/expense-manager/main/screenshots/Screenshot_1683870179.png)
+![alt text](https://raw.githubusercontent.com/sashithacj/expense-manager/main/screenshots/Screenshot_1683870194.png)
+![alt text](https://raw.githubusercontent.com/sashithacj/expense-manager/main/screenshots/Screenshot_1683870207.png)
+![alt text](https://raw.githubusercontent.com/sashithacj/expense-manager/main/screenshots/Screenshot_1683870219.png)
+![alt text](https://raw.githubusercontent.com/sashithacj/expense-manager/main/screenshots/Screenshot_1683870313.png)
 
 ## Getting Started
 
